@@ -25,62 +25,59 @@
 
         <div class="search-container">
 
-    <div class="warehouse-group">
+            <div class="warehouse-group">
 
-        <label for="warehouse">
-            Warehouse
-        </label>
+                <label for="warehouse">
+                Warehouse
+                </label>
 
-        <select id="warehouse">
+                <select id="warehouse">
+                    <option value="">
+                        Loading Warehouses...
+                    </option>
+                </select>
+            </div>
 
-            <option value="">
-                Loading Warehouses...
-            </option>
+            <div class="search-group">
 
-        </select>
+                <label for="search">
+                    Product Code
+                </label>
 
-    </div>
+                <div class="search-row">
 
-    <div class="search-group">
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Enter product code">
 
-        <label for="search">
-            Product Code
-        </label>
+                    <button
+                        id="searchBtn"
+                        disabled>
 
-        <div class="search-row">
+                        Search
 
-            <input
-                type="text"
-                id="search"
-                placeholder="Enter product code">
+                    </button>
 
-            <button
-                id="searchBtn"
-                disabled>
+                </div>
 
-                Search
+            </div>
 
-            </button>
+            <div class="stock-filter">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="stockOnly">
+
+                    Show Only In Stock
+
+                </label>
+
+            </div>
 
         </div>
-
-    </div>
-
-    <div class="stock-filter">
-
-        <label>
-
-            <input
-                type="checkbox"
-                id="stockOnly">
-
-            Show Only In Stock
-
-        </label>
-
-    </div>
-
-</div>
 
         <div
             id="loading"
