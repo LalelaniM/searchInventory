@@ -4,6 +4,7 @@ const stockOnly = document.getElementById("stockOnly");
 const searchBtn = document.getElementById("searchBtn");
 
 const tbody = document.querySelector("#inventoryTable tbody");
+const tableContainer = document.getElementById("tableContainer");
 
 const loading = document.getElementById("loading");
 const message = document.getElementById("message");
@@ -94,6 +95,7 @@ async function searchInventory() {
     message.textContent = "";
 
     tbody.innerHTML = "";
+    tableContainer.classList.add("hidden");
 
     loading.classList.remove("hidden");
 
@@ -121,8 +123,10 @@ async function searchInventory() {
 
             message.textContent =
                 "No matching products found.";
+                tableContainer.classList.add("hidden");
 
         }
+        tableContainer.classList.remove("hidden");
 
         renderTable();
 
