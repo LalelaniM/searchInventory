@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ERPLY Inventory Search</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>ERPLY Inventory Search</h1>
+
+        <div class="controls">
+
+            <div class="control-group">
+
+                <label for="warehouse">
+                    Warehouse
+                </label>
+
+                <select id="warehouse">
+
+                    <option value="">
+                        Loading Warehouses...
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="control-group">
+
+                <label for="search">
+                    Product Code
+                </label>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Enter code">
+
+            </div>
+
+            <div class="checkbox-group">
+
+                <input
+                    type="checkbox"
+                    id="stockOnly">
+
+                <label for="stockOnly">
+                    Show Only In Stock
+                </label>
+
+            </div>
+
+            <button
+                id="searchBtn"
+                disabled>
+
+                Search
+
+            </button>
+
+        </div>
+
+        <div
+            id="loading"
+            class="loading hidden">
+
+            Searching inventory...
+
+        </div>
+
+        <div
+            id="message"
+            class="message">
+
+        </div>
+
+        <table id="inventoryTable">
+
+            <thead>
+
+                <tr>
+
+                    <th data-column="productName">
+                        Product Name
+                    </th>
+
+                    <th data-column="productCode">
+                        Product Code
+                    </th>
+
+                    <th data-column="size">
+                        Size (UK)
+                    </th>
+
+                    <th data-column="stock">
+                        Stock
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
