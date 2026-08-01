@@ -384,11 +384,11 @@ const allProducts = data.records || [];
 
 app.listen(PORT, () => {
 
-    /*console.log("");
+    console.log("");
     console.log("==============================");
     console.log("ERPLY Inventory Server Running");
     console.log(`http://localhost:${PORT}`);
     console.log("==============================");
-    console.log("");*/
+    console.log("");
 
 });
